@@ -1,0 +1,142 @@
+{
+  "version": "0.1.0",
+  "name": "title_dapp",
+  "instructions": [
+    {
+      "name": "registerProperty",
+      "accounts": [
+        {
+          "name": "property",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "addressString",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "delegateRentalTitle",
+      "accounts": [
+        {
+          "name": "property",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "rentalTitle",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "tenantPubkey",
+          "type": "publicKey"
+        },
+        {
+          "name": "startDate",
+          "type": "i64"
+        },
+        {
+          "name": "endDate",
+          "type": "i64"
+        }
+      ]
+    },
+    {
+      "name": "revokeRentalTitle",
+      "accounts": [
+        {
+          "name": "property",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "rentalTitle",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Property",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner",
+            "type": "publicKey"
+          },
+          {
+            "name": "propertyAddress",
+            "type": "string"
+          },
+          {
+            "name": "isRented",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RentalTitle",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "propertyAccount",
+            "type": "publicKey"
+          },
+          {
+            "name": "tenant",
+            "type": "publicKey"
+          },
+          {
+            "name": "owner",
+            "type": "publicKey"
+          },
+          {
+            "name": "rentStartDate",
+            "type": "i64"
+          },
+          {
+            "name": "rentEndDate",
+            "type": "i64"
+          }
+        ]
+      }
+    }
+  ]
+}
