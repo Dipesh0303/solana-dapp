@@ -1,4 +1,4 @@
-# test_1
+# Ventus
 
 This is a Next.js app containing:
 
