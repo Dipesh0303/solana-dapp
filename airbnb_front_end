@@ -318,7 +318,7 @@
 
         <div class="listings-grid">
             <div class="listing-card" onclick="showDetails(1)">
-                <img src="https://placehold.co/600x400" alt="Modern loft apartment in downtown with floor-to-ceiling windows and city views" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e900be44-d6f1-4a8e-8acd-c4b52b8555c6.png" alt="Modern loft apartment in downtown with floor-to-ceiling windows and city views" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$125/night</div>
                     <h3 class="listing-title">Modern Downtown Loft</h3>
@@ -327,7 +327,7 @@
             </div>
 
             <div class="listing-card" onclick="showDetails(2)">
-                <img src="https://placehold.co/600x400" alt="Beachfront villa with private pool and ocean views in Malibu" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/77993e9f-c2bc-470d-988c-39131de9c45a.png" alt="Beachfront villa with private pool and ocean views in Malibu" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$350/night</div>
                     <h3 class="listing-title">Beachfront Villa</h3>
@@ -336,7 +336,7 @@
             </div>
 
             <div class="listing-card" onclick="showDetails(3)">
-                <img src="https://placehold.co/600x400" alt="Cozy mountain cabin with wooden interior and fireplace in Aspen" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d49f2860-f61d-41dc-ad4e-4ffcc28b84ed.png" alt="Cozy mountain cabin with wooden interior and fireplace in Aspen" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$220/night</div>
                     <h3 class="listing-title">Mountain Cabin</h3>
@@ -345,7 +345,7 @@
             </div>
 
             <div class="listing-card" onclick="showDetails(4)">
-                <img src="https://placehold.co/600x400" alt="Historic brownstone apartment with vintage decor in Boston" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc0fd0c6-48c6-497a-bbfb-87db7d2cee97.png" alt="Historic brownstone apartment with vintage decor in Boston" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$180/night</div>
                     <h3 class="listing-title">Historic Brownstone</h3>
@@ -354,7 +354,7 @@
             </div>
 
             <div class="listing-card" onclick="showDetails(5)">
-                <img src="https://placehold.co/600x400" alt="Luxury penthouse with rooftop terrace in Miami" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3975649f-924d-4d6b-8f99-69753d75d951.png" alt="Luxury penthouse with rooftop terrace in Miami" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$420/night</div>
                     <h3 class="listing-title">Luxury Penthouse</h3>
@@ -363,7 +363,7 @@
             </div>
 
             <div class="listing-card" onclick="showDetails(6)">
-                <img src="https://placehold.co/600x400" alt="Charming studio with garden view in Portland" class="listing-image">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbb2d0a5-8c0c-467e-8022-75d9e004c688.png" alt="Charming studio with garden view in Portland" class="listing-image">
                 <div class="listing-details">
                     <div class="listing-price">$110/night</div>
                     <h3 class="listing-title">Garden Studio</h3>
@@ -392,7 +392,7 @@
         </header>
 
         <div class="details-container" style="padding: 2rem;">
-            <img id="details-img" src="" alt="" class="listing-image" style="width: 100%; height: 300px; object-fit: cover;">
+            <img id="details-img" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e900be44-d6f1-4a8e-8acd-c4b52b8555c6.png" alt="" class="listing-image" style="width: 100%; height: 300px; object-fit: cover;">
             <div class="details-content">
                 <h2 id="details-title"></h2>
                 <div id="details-price"></div>
@@ -457,25 +457,68 @@
     </div>
 
     <script>
-        const listings = [
-            { id: 1, title: "Modern Downtown Loft", location: "New York, NY", price: "$125/night", description: "Stay in this stylish loft in the heart of downtown." },
-            { id: 2, title: "Beachfront Villa", location: "Malibu, CA", price: "$350/night", description: "Enjoy ocean views from your private villa." },
-            { id: 3, title: "Mountain Cabin", location: "Aspen, CO", price: "$220/night", description: "Cozy cabin with stunning mountain views." },
-            { id: 4, title: "Historic Brownstone", location: "Boston, MA", price: "$180/night", description: "Stay in this beautifully restored historic home." },
-            { id: 5, title: "Luxury Penthouse", location: "Miami, FL", price: "$420/night", description: "Modern penthouse with rooftop terrace." },
-            { id: 6, title: "Garden Studio", location: "Portland, OR", price: "$110/night", description: "Peaceful studio with garden views." }
-        ];
+     const listings = [
+    {
+        id: 1,
+        title: "Modern Downtown Loft",
+        location: "New York, NY",
+        price: "$125/night",
+        description: "Stay in this stylish loft in the heart of downtown.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e900be44-d6f1-4a8e-8acd-c4b52b8555c6.png"
+    },
+    {
+        id: 2,
+        title: "Beachfront Villa",
+        location: "Malibu, CA",
+        price: "$350/night",
+        description: "Enjoy ocean views from your private villa.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/77993e9f-c2bc-470d-988c-39131de9c45a.png"
+    },
+    {
+        id: 3,
+        title: "Mountain Cabin",
+        location: "Aspen, CO",
+        price: "$220/night",
+        description: "Cozy cabin with stunning mountain views.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d49f2860-f61d-41dc-ad4e-4ffcc28b84ed.png"
+    },
+    {
+        id: 4,
+        title: "Historic Brownstone",
+        location: "Boston, MA",
+        price: "$180/night",
+        description: "Stay in this beautifully restored historic home.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fc0fd0c6-48c6-497a-bbfb-87db7d2cee97.png"
+    },
+    {
+        id: 5,
+        title: "Luxury Penthouse",
+        location: "Miami, FL",
+        price: "$420/night",
+        description: "Modern penthouse with rooftop terrace.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3975649f-924d-4d6b-8f99-69753d75d951.png"
+    },
+    {
+        id: 6,
+        title: "Garden Studio",
+        location: "Portland, OR",
+        price: "$110/night",
+        description: "Peaceful studio with garden views.",
+        image: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cbb2d0a5-8c0c-467e-8022-75d9e004c688.png"
+    }
+];
 
-        function showDetails(id) {
-            const listing = listings.find(item => item.id === id);
-            document.getElementById('details-title').textContent = listing.title;
-            document.getElementById('details-price').textContent = listing.price;
-            document.getElementById('details-location').textContent = listing.location;
-            document.getElementById('details-description').textContent = listing.description;
-            document.getElementById('details-img').src = "https://placehold.co/600x400"; // Placeholder image
-            document.getElementById('home-page').style.display = 'none';
-            document.getElementById('details-page').style.display = 'block';
-        }
+function showDetails(id) {
+    const listing = listings.find(item => item.id === id);
+    document.getElementById('details-title').textContent = listing.title;
+    document.getElementById('details-price').textContent = listing.price;
+    document.getElementById('details-location').textContent = listing.location;
+    document.getElementById('details-description').textContent = listing.description;
+    document.getElementById('details-img').src = listing.image;
+    document.getElementById('home-page').style.display = 'none';
+    document.getElementById('details-page').style.display = 'block';
+}
+
 
         document.getElementById('back-to-home').addEventListener('click', function(e) {
             e.preventDefault();
@@ -516,6 +559,8 @@
     </script>
 </body>
 </html>
+
+
 
 
 
