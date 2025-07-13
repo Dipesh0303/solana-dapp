@@ -1,27 +1,7 @@
 # Ventus
 
-This is a Next.js app containing:
+Ventus is used as an add-on for Airbnb's in order to prevent double bookings. This adds on an extra layer of security for booking systems by delegating a unique token recorded on the blockchain when registering or renting properties. There are multiple functions in the smart contract which connects to the wallet for each authorised transaction. This creates a more secure way to register ownership for a given property or listing. This reduces double bookings and keeps people safe from malicious intent. We designed our smart contract to be scalable to other booking services and property ownership platforms. 
 
-- Tailwind CSS setup for styling
-- Useful wallet UI elements setup using [Gill](https://gill.site/)
-- A basic Counter Solana program written in Anchor
-- UI components for interacting with the Counter program
-
-## Getting Started
-
-### Installation
-
-#### Download the template
-
-```shell
-pnpm create solana-dapp@latest -t gh:solana-developers/solana-templates/templates/test_1
-```
-
-#### Install Dependencies
-
-```shell
-pnpm install
-```
 
 ## Apps
 
